@@ -14,13 +14,13 @@ class BasketballPointsCounter extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => CounterCubit(),
-      child: MaterialApp(debugShowCheckedModeBanner: false, home: HomePage()),
+      child: MaterialApp(debugShowCheckedModeBanner: false, home: const HomePage()),
     );
   }
 }
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
+ const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
